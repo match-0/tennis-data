@@ -1,0 +1,11 @@
+/home/sports/hdd2/huangfy/v0/ConsoleTest2/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttribute.cs
+/home/sports/hdd2/huangfy/v0/ConsoleTest2/obj/Debug/ConsoleTest.exe
+/home/sports/hdd2/huangfy/v0/ConsoleTest2/obj/Debug/ConsoleTest.pdb
+/home/sports/hdd2/huangfy/v0/ConsoleTest2/bin/Debug/TennisDataLib.dll
+/home/sports/hdd2/huangfy/v0/ConsoleTest2/bin/Debug/TennisDataLib.pdb
+/home/sports/hdd2/huangfy/v0/ConsoleTest2/bin/Debug/HtmlAgilityPack.dll
+/home/sports/hdd2/huangfy/v0/ConsoleTest2/bin/Debug/HtmlAgilityPack.pdb
+/home/sports/hdd2/huangfy/v0/ConsoleTest2/bin/Debug/HtmlAgilityPack.xml
+/home/sports/hdd2/huangfy/v0/ConsoleTest2/bin/Debug/ConsoleTest.exe.config
+/home/sports/hdd2/huangfy/v0/ConsoleTest2/bin/Debug/ConsoleTest.pdb
+/home/sports/hdd2/huangfy/v0/ConsoleTest2/bin/Debug/ConsoleTest.exe

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tennis Data Report "p1_name" vs "p2_name"</title>
+<style>
+table
+{
+    table-layout: fixed;
+    width: 100%;
+    height: 200px; 
+    color: white; 
+    text-align: center;
+}
+.fill {
+    width: 30%;
+    height: 200px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('tennis-receiver-court.png');
+}
+.return_dir{
+	background-color: #FFFF99;
+	border: 2px solid black; 
+	border-collapse: collapse;
+}
+.return_depth{
+	background-color: #A4C0F4;
+	border: 2px solid black; 
+	border-collapse: collapse;
+}
+.return{
+	border: 2px solid black; 
+	border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h1>"p1_name" has winning chance of "p1_winning_chance"</h1>
+<p>This report is based on matches played from "start_date" to one day before "target_match_date", "p1_name" vs "p2_name".</p>
+
+<h2>First Serve:</h2>
+<div class="fill">
+<table>
+  <tr>
+    <td>"p1_ad_serve_1st_wide"</td>
+    <td>"p1_ad_serve_1st_body"</td>
+    <td>"p1_ad_serve_1st_t"</td>
+    <td>"p1_de_serve_1st_t"</td>
+    <td>"p1_de_serve_1st_body"</td>
+    <td>"p1_de_serve_1st_wide"</td>
+  </tr>
+</table>
+</div>
+
+<h2>Second Serve:</h2>
+<div class="fill">
+<table>
+  <tr>
+    <td>"p1_ad_serve_2nd_wide"</td>
+    <td>"p1_ad_serve_2nd_body"</td>
+    <td>"p1_ad_serve_2nd_t"</td>
+    <td>"p1_de_serve_2nd_t"</td>
+    <td>"p1_de_serve_2nd_body"</td>
+    <td>"p1_de_serve_2nd_wide"</td>
+  </tr>
+</table>
+</div>
+
+<h2>First Serve at 15-40:</h2>
+<div class="fill">
+<table>
+  <tr>
+    <td>   </td>
+    <td>   </td>
+    <td>   </td>
+    <td>"p1_serve_1st_t_15_40"</td>
+    <td>"p1_serve_1st_body_15_40"</td>
+    <td>"p1_serve_1st_wide_15_40"</td>
+  </tr>
+</table>
+</div>
+
+<h2>Second Serve at 15-40:</h2>
+<div class="fill">
+<table>
+  <tr>
+    <td>   </td>
+    <td>   </td>
+    <td>   </td>
+    <td>"p1_serve_2nd_t_15_40"</td>
+    <td>"p1_serve_2nd_body_15_40"</td>
+    <td>"p1_serve_2nd_wide_15_40"</td>
+  </tr>
+</table>
+</div>
+
+<h2>First Serve at 30-30:</h2>
+<div class="fill">
+<table>
+  <tr>
+    <td>   </td>
+    <td>   </td>
+    <td>   </td>
+    <td>"p1_serve_1st_t_30_30"</td>
+    <td>"p1_serve_1st_body_30_30"</td>
+    <td>"p1_serve_1st_wide_30_30"</td>
+  </tr>
+</table>
+</div>
+
+<h2>Second Serve at 30-30:</h2>
+<div class="fill">
+<table>
+  <tr>
+    <td>   </td>
+    <td>   </td>
+    <td>   </td>
+    <td>"p1_serve_2nd_t_30_30"</td>
+    <td>"p1_serve_2nd_body_30_30"</td>
+    <td>"p1_serve_2nd_wide_30_30"</td>
+  </tr>
+</table>
+</div>
+
+<h2>First Serve at 30-40:</h2>
+<div class="fill">
+<table>
+  <tr>
+    <td>"p1_serve_1st_wide_30_40"</td>
+    <td>"p1_serve_1st_body_30_40"</td>
+    <td>"p1_serve_1st_t_30_40"</td>
+    <td>   </td>
+    <td>   </td>
+    <td>   </td>
+  </tr>
+</table>
+</div>
+
+<h2>Second Serve at 30-40:</h2>
+<div class="fill">
+<table>
+  <tr>
+    <td>"p1_serve_2nd_wide_30_40"</td>
+    <td>"p1_serve_2nd_body_30_40"</td>
+    <td>"p1_serve_2nd_t_30_40"</td>
+    <td>   </td>
+    <td>   </td>
+    <td>   </td>
+  </tr>
+</table>
+</div>
+
+<h2>First Serve at 40-AD:</h2>
+<div class="fill">
+<table>
+  <tr>
+    <td>"p1_serve_1st_wide_40_ad"</td>
+    <td>"p1_serve_1st_body_40_ad"</td>
+    <td>"p1_serve_1st_t_40_ad"</td>
+    <td>   </td>
+    <td>   </td>
+    <td>   </td>
+  </tr>
+</table>
+</div>
+
+<h2>Second Serve at 40-AD:</h2>
+<div class="fill">
+<table>
+  <tr>
+    <td>"p1_serve_2nd_wide_40_ad"</td>
+    <td>"p1_serve_2nd_body_40_ad"</td>
+    <td>"p1_serve_2nd_t_40_ad"</td>
+    <td>   </td>
+    <td>   </td>
+    <td>   </td>
+  </tr>
+</table>
+</div>
+
+<h2>"p2_name" Serve and "p1_name" Return:</h2>
+<table style="width:50%; color:black; border: 2px solid black; border-collapse: collapse;">
+  <tr>
+    <td></td>
+    <td colspan="3" class='return_dir'>Return Direction</td>
+    <td colspan="2" class='return_depth'>Return Depth</td>
+    <td rowspan="2" class='return'>Return Error</td>
+    <td rowspan="2" class='return'>Server's Ace</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class='return_dir'>To Left</td>
+    <td class='return_dir'>To Middle</td>
+    <td class='return_dir'>To Right</td>
+    <td class='return_depth'>Shallow</td>
+    <td class='return_depth'>Deep</td>
+  </tr>
+  <tr>
+    <td class='return'>Forehand</td>
+    <td class='return_dir'>"pl_return_fh_left"</td>
+    <td class='return_dir'>"p1_return_fh_mid"</td>
+    <td class='return_dir'>"p1_return_fh_right"</td>
+    <td class='return_depth'>"pl_return_fh_shallow"</td>
+    <td class='return_depth'>"p1_return_fh_deep"</td>
+    <td class='return'>"pl_return_fh_error"</td>
+    <td class='return'>"oppo_serve_ace_fh"</td>
+  </tr>
+  <tr>
+    <td class='return'>Backhand</td>
+    <td class='return_dir'>"pl_return_bh_left"</td>
+    <td class='return_dir'>"p1_return_bh_mid"</td>
+    <td class='return_dir'>"p1_return_bh_right"</td>
+    <td class='return_depth'>"pl_return_bh_shallow"</td>
+    <td class='return_depth'>"p1_return_bh_deep"</td>
+    <td class='return'>"pl_return_bh_error"</td>
+    <td class='return'>"oppo_serve_ace_bh"</td>
+  </tr>
+  <tr>
+    <td class='return'>Body</td>
+    <td class='return_dir'>"pl_return_body_left"</td>
+    <td class='return_dir'>"p1_return_body_mid"</td>
+    <td class='return_dir'>"p1_return_body_right"</td>
+    <td class='return_depth'>"pl_return_body_shallow"</td>
+    <td class='return_depth'>"p1_return_body_deep"</td>
+    <td class='return'>"pl_return_body_error"</td>
+    <td class='return'>"oppo_serve_ace_body"</td>
+  </tr>
+</table>
+
+</body>
+</html>

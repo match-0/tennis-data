@@ -1,0 +1,6 @@
+/home/sports/hdd2/huangfy/v0/TennisDataLib/obj/Debug/.NETFramework,Version=v4.5.2.AssemblyAttribute.cs
+/home/sports/hdd2/huangfy/v0/TennisDataLib/bin/Debug/TennisDataLib.pdb
+/home/sports/hdd2/huangfy/v0/TennisDataLib/bin/Debug/TennisDataLib.dll
+/home/sports/hdd2/huangfy/v0/TennisDataLib/obj/Debug/TennisDataLib.dll
+/home/sports/hdd2/huangfy/v0/TennisDataLib/obj/Debug/TennisDataLib.pdb
+/home/sports/hdd2/huangfy/v0/TennisDataLib/bin/Debug/HtmlAgilityPack.dll

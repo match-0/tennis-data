@@ -1,0 +1,431 @@
+<html>
+
+<head>
+
+    <style type="text/css">
+        body {
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+        }
+
+        .header {
+            padding: 20px;
+            color: #fff;
+            background-color: rgb(13, 12, 12);
+        }
+
+        .desc {
+            color: #848484;
+            font-size: 12px;
+        }
+
+        .athlete-info-card {
+            padding: 20px;
+            /* height: 150px; */
+            width: 50%;
+            border-radius: 30px;
+            box-shadow: 3px 3px 10px #ccc;
+            margin: 20px auto;
+        }
+
+        .athlete-info-avatar {
+            background-color: #e8e8e8;
+            height: 60px;
+            width: 60px;
+            border-radius: 50px;
+            margin-bottom: 10px;
+            margin-left: 170px;
+        }
+
+        .athlete-name {
+            font-weight: 800;
+        }
+
+        .athlete-info {
+            color: #5f5f5f;
+            margin: 10px 0;
+        }
+
+        .analysis {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-content: center;
+            align-content: center;
+            padding: 20px;
+        }
+        .logo{
+            position: absolute;
+            left: 20px;
+            top: 30px
+        }
+
+            /* If the width of the screen is less than 500px 时 */
+            @media screen and (max-width: 1000px) {
+            .logo {
+                position: relative;
+                left: 0;
+                top: 10px;
+            }
+        }
+
+        /* If the width of the screen is less than 500px 时 */
+        @media screen and (max-width: 1000px) {
+            .analysis {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .tennis-res {
+            position: relative;
+        }
+
+        .tennis-res::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(./tennis_playground.jpg);
+            background-size: cover;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        .tennis-res {
+            height: 200px;
+            width: 400px;
+            background: linear-gradient(rgba(20, 95, 233, 0.4), rgba(20, 95, 233, 0.4)), url(./tennis_playground.jpg);
+            background-size: cover;
+            /* padding-top: 300px; */
+        }
+
+        .region-list {
+            display: flex;
+            margin-left: 60px;
+            align-items: center;
+
+        }
+
+        .region {
+            margin-top: 80px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(251, 245, 149, 1);
+
+            margin-right: 5px;
+            font-weight: 500;
+            text-align: center;
+            line-height: 45px;
+            color: #434343;
+            font-size: 18px;
+            /* box-shadow: 5px 5px 15px #9d9c9c; */
+            /* border:1px solid rgb(209, 243, 124);; */
+            /* 
+            background: rgba(158, 235, 29, 1);
+            color: white;
+            color: rgb(32, 78, 202); */
+
+        }
+
+        .small {
+            width: 40px;
+            height: 40px;
+            background: rgba(176, 219, 245, 1);
+            color: rgb(14, 74, 114);
+            text-align: center;
+            line-height: 40px;
+            font-weight: 100;
+            font-size: 17px;
+            /* border:1px dashed rgb(14, 74, 114);; */
+            /* background: rgba(158, 235, 29, 1);
+            color: white;
+            color: rgb(32, 78, 202); */
+        }
+		
+		.x-small {
+            width: 35px;
+            height: 35px;
+            background: rgba(176, 219, 245, 1);
+            color: rgb(14, 74, 114);
+            text-align: center;
+            line-height: 35px;
+            font-weight: 100;
+            font-size: 16px;
+            /* border:1px dashed rgb(14, 74, 114);; */
+            /* background: rgba(158, 235, 29, 1);
+            color: white;
+            color: rgb(32, 78, 202); */
+        }
+		
+		.xx-small {
+            width: 30px;
+            height: 30px;
+            background: rgba(176, 219, 245, 1);
+            color: rgb(14, 74, 114);
+            text-align: center;
+            line-height: 30px;
+            font-weight: 100;
+            font-size: 15px;
+            /* border:1px dashed rgb(14, 74, 114);; */
+            /* background: rgba(158, 235, 29, 1);
+            color: white;
+            color: rgb(32, 78, 202); */
+        }
+
+        .big {
+            width: 50px;
+            height: 50px;
+            background: rgb(241, 219, 147);
+
+            background: rgb(255 238 52);
+
+            /* color: rgb(253, 139, 2); */
+            text-align: center;
+            line-height: 50px;
+            font-weight: 900;
+            font-size: 19px;
+            /* border:2px solid rgb(195, 91, 5); */
+            /* background: rgba(158, 235, 29, 1);
+            color: white;
+            color: rgb(32, 78, 202); */
+        }
+		
+		.x-big {
+            width: 55px;
+            height: 55px;
+            background: rgb(241, 219, 147);
+
+            background: rgb(255 238 52);
+
+            /* color: rgb(253, 139, 2); */
+            text-align: center;
+            line-height: 55px;
+            font-weight: 900;
+            font-size: 20px;
+            /* border:2px solid rgb(195, 91, 5); */
+            /* background: rgba(158, 235, 29, 1);
+            color: white;
+            color: rgb(32, 78, 202); */
+        }
+		
+		.xx-big {
+            width: 60px;
+            height: 60px;
+            background: rgb(241, 219, 147);
+
+            background: rgb(255 238 52);
+
+            /* color: rgb(253, 139, 2); */
+            text-align: center;
+            line-height: 60px;
+            font-weight: 900;
+            font-size: 21px;
+            /* border:2px solid rgb(195, 91, 5); */
+            /* background: rgba(158, 235, 29, 1);
+            color: white;
+            color: rgb(32, 78, 202); */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tabel-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            table-layout: fixed;
+            width: 100%;
+            height: 200px;
+            color: white;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .fill {
+            width: 30%;
+            height: 200px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-image: url('tennis-receiver-court.png');
+        }
+
+        .return_dir {
+            background-color: #FFFF99;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        .return_depth {
+            background-color: #A4C0F4;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        .return {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        .footer {
+            height: 100px;
+            padding: 30px;
+            background-color: rgb(13, 12, 12);
+            color: #fff;
+            margin-top: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <img class="logo" width="150px" src="dep-intel-logo.png" alt="dep-intel-logo">
+        <h1 class="titel">Analysis Report</h1>
+		<a href="generated-report-page1-Novak-Djokovic-All-Right-Hand-2022-11-08.html">Page1</a> <a href="generated-report-page2-Novak-Djokovic-All-Right-Hand-2022-11-08.html">Page2</a>
+    </div>
+
+    <hr />
+    <div class="athlete-info-card">
+        <!-- <div class="athlete-info-avatar">
+
+            </div> -->
+        <div class="athlete-name">
+            Novak Djokovic vs All Right-Hand
+        </div>
+        <p class="desc" class="subtitle">This report is based on matches played within last 2 years (from 2020-11-08
+            until 2022-11-08) </p>
+    </div>
+    <div class="container">
+
+
+        <div class="analysis">
+            <div> <span class="res-info">Djokovic Serve: (First Serve)</span>
+                <div class="tennis-res">
+                    <div class="region-list">
+                        <div class="region x-big">52%</div>
+                        <div class="region xx-small">4%</div>
+                        <div class="region big">44%</div>
+                        <div class="region big">49%</div>
+                        <div class="region xx-small">3%</div>
+                        <div class="region big">48%</div>
+                    </div>
+
+                </div>
+            </div>
+            <div> <span class="res-info">Djokovic Serve: (Second Serve)</span>
+                <div class="tennis-res">
+                    <div class="region-list">
+                        <div class="region small">26%</div>
+                        <div class="region mid">37%</div>
+                        <div class="region mid">37%</div>
+                        <div class="region small">26%</div>
+                        <div class="region mid">35%</div>
+                        <div class="region mid">39%</div>
+                    </div>
+                </div>
+            </div>
+            <div> <span class="res-info">Djokovic Break Point Serve:<br />(30-40 or 40-AD)
+                </span>
+                <div class="tennis-res">
+                    <div class="region-list">
+                        <div class="region mid">37%</div>
+                        <div class="region xx-small">4%</div>
+                        <div class="region x-big">59%</div>
+                    </div>
+                </div>
+            </div>
+            <div> <span class="res-info"></span>Djokovic Break Point Second Serve:<br />
+                (30-40 or 40-AD)
+                <div class="tennis-res">
+                    <div class="region-list">
+                        <div class="region small">25%</div>
+                        <div class="region mid">40%</div>
+                        <div class="region mid">35%</div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="tabel-container">
+        <div>
+            <h3>All Right-Hand Serve and Djokovic Return:</h3>
+            <table
+                style="width:60%; min-width: 510px; color:black; border: 2px solid black; border-collapse: collapse; font-size: 13px;">
+                <tr>
+                    <td></td>
+                    <td colspan="3" class='return_dir'>Return Direction</td>
+                    <td colspan="2" class='return_depth'>Return Depth</td>
+                    <td rowspan="2" class='return'>Return Error</td>
+                    <td rowspan="2" class='return'>Server's Ace</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class='return_dir'>To Left</td>
+                    <td class='return_dir'>To Middle</td>
+                    <td class='return_dir'>To Right</td>
+                    <td class='return_depth'>Shallow</td>
+                    <td class='return_depth'>Deep</td>
+                </tr>
+                <tr>
+                    <td class='return'>Forehand</td>
+                    <td class='return_dir'>23%</td>
+                    <td class='return_dir'>61%</td>
+                    <td class='return_dir'>16%</td>
+                    <td class='return_depth'>23%</td>
+                    <td class='return_depth'>77%</td>
+                    <td class='return'>21%</td>
+                    <td class='return'>13%</td>
+                </tr>
+                <tr>
+                    <td class='return'>Backhand</td>
+                    <td class='return_dir'>8%</td>
+                    <td class='return_dir'>53%</td>
+                    <td class='return_dir'>39%</td>
+                    <td class='return_depth'>24%</td>
+                    <td class='return_depth'>76%</td>
+                    <td class='return'>16%</td>
+                    <td class='return'>12%</td>
+                </tr>
+                <tr>
+                    <td class='return'>Body</td>
+                    <td class='return_dir'>11%</td>
+                    <td class='return_dir'>59%</td>
+                    <td class='return_dir'>30%</td>
+                    <td class='return_depth'>18%</td>
+                    <td class='return_depth'>82%</td>
+                    <td class='return'>11%</td>
+                    <td class='return'>0%</td>
+                </tr>
+            </table>
+
+        </div>
+
+
+    </div>
+    <div class="footer">
+        Contact us:<br />
+        Prof. Jin-Song Dong<br />
+        Technical Director<br />
+        dongjs1@gmail.com
+
+    </div>
+</body>
+
+
+</html>
